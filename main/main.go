@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"runtime"
 	"strings"
 
@@ -10,6 +11,13 @@ import (
 )
 
 func main() {
+	_, err := os.Open("aaa")
+	if err != nil {
+
+		fmt.Printf("%v", err)
+		panic(err)
+	}
+
 	a()
 }
 

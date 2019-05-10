@@ -10,3 +10,11 @@ message User2 {
     string name = 1;
     google.protobuf.Any value = 2;
 }
+
+// Wrapper message for `int32`.
+//
+// The JSON representation for `Int32Value` is JSON number.
+message Int32Value2 {
+    // The int32 value.
+    int32 value = 1;
+}
